@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 
 import About from "./Components/About";
@@ -35,7 +34,6 @@ const App = () => {
       <Certification />
       <Projects />
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
-      <Analytics />
     </div>
   );
 };
