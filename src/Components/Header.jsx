@@ -1,9 +1,3 @@
-/**
- * Header component
- *
- * Top navigation bar for your site. Set to remain visible as the
- * user scrolls so that they can constantly reach any part of your page.
- */
 import React from "react";
 
 const Header = () => {
@@ -21,10 +15,54 @@ const Header = () => {
         zIndex: 10,
       }}
     >
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#footer">Contact</a>
+      <a
+        style={{ cursor: "pointer" }}
+        onClick={() => {
+          document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        Home
+      </a>
+      <a
+        style={{ cursor: "pointer" }}
+        onClick={() => {
+          document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        About
+      </a>
+      <a
+        style={{ cursor: "pointer" }}
+        onClick={() => {
+          document.getElementById("education").scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        Education
+      </a>
+      <a
+        style={{ cursor: "pointer" }}
+        onClick={() => {
+          document.getElementById("certification").scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        Certification
+      </a>
+      <a
+        style={{ cursor: "pointer" }}
+        onClick={() => {
+          document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        Projects
+      </a>
+      <a
+        style={{ cursor: "pointer" }}
+        onClick={() => {
+          document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        Contact
+      </a>
     </div>
   );
 };
